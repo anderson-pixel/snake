@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 function App() {
     return (
@@ -151,7 +150,7 @@ setTimeout(function(){
     }
 
     function drawSnake() {
-      ctx!.fillStyle = "blue";
+      ctx!.fillStyle = "#2790d1";
       for (let i = 0; i < snakeParts.length; i++) {
         let part = snakeParts[i];
         ctx!.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
@@ -162,7 +161,7 @@ setTimeout(function(){
         snakeParts.shift(); // remove the furthet item from the snake parts if have more than our tail size.
       }
     
-      ctx!.fillStyle = "cyan";
+      ctx!.fillStyle = "#27d14f";
       ctx!.fillRect(headX * tileCount, headY * tileCount, tileSize, tileSize);
     }
 
